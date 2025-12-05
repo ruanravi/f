@@ -1,0 +1,375 @@
+/* 1. Definições Globais e Cores */
+:root {
+    --verde-principal: #38761d; /* Verde Escuro da marca */
+    --verde-secundario: #4CAF50; /* Verde Brilhante para CTA */
+    --cor-fundo-claro: #f4f8f4; /* Cinza/Verde muito claro */
+    --cor-texto-escuro: #333;
+    --cor-fundo-escuro: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+    overflow-x: hidden;
+}
+
+/* Container de Conteúdo (Centraliza tudo) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. HEADER (Topo) */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-inst {
+    height: 60px;
+}
+
+nav a {
+    background-color: #6aa84f;   
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 5ms ease;
+   font-size: 18px;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 2s ease, transform 8s ease;
+}
+
+nav a:hover {
+ background-color: #fff;
+    color: #5b923c;
+    border: 1px solid black;
+    transition: background-color 1s ease, transform 1s ease,  color 0.3s ease;
+    
+    
+}
+
+
+.btn-cta-header {
+    background-color: #6aa84f;
+    font-size: 25px;
+    color: white;
+    padding: 10px ;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    transition: background-color 2s ease, transform 8s ease;
+}
+
+.btn-cta-header:hover {
+     background-color: #fff;
+    color: #5b923c;
+    border: 1px solid black;
+    transition: background-color 1s ease, transform 1s ease,  color 0.3s ease;
+
+}
+
+#hero {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(ht11.jpg); 
+    background-size: cover;
+    background-position: center  bottom;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; 
+    background-attachment: fixed;
+    min-height: 70h;
+}
+
+#hero {
+   
+    position: relative; 
+    overflow: hidden; 
+    background-color: #004d40;
+}
+
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0; 
+    opacity: 0.7;
+}
+
+
+.hero-text {
+    z-index: 10; 
+    position: relative; 
+}
+
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+background-attachment: fixed;
+    filter: blur(0px); 
+    z-index: -1; 
+}
+
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+
+.btn-cta-main {
+    display: inline-block;
+    background-color: var(--verde-secundario);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 2s ease, transform 8s ease;
+}
+
+.btn-cta-main:hover {
+    background-color: #38761d;
+    transform: translateY(-2px);
+}
+
+
+#diferenciais {
+   padding: 110px 0;
+    text-align: center;
+    color: white; 
+    position: relative; 
+    overflow: hidden; 
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+        url(ht11.jpg); 
+    background-size: cover;
+    background-position: center bottom;
+    min-width: 100%;
+    background-attachment: fixed;
+    
+}
+#diferenciais::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(ht11.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#diferenciais h2 {
+    color: white; 
+}
+
+.beneficios-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: stretch;
+    padding: 15px;
+    
+}
+.equipe-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.beneficio-item {
+    color: white;
+}
+
+.beneficio-item h3 {
+    color: white; 
+}
+
+.beneficio-item i {
+    font-size: 3em;
+    color: var(--verde-secundario);
+    margin-bottom: 15px;
+}
+
+#estrutura {
+    padding: 80px 0;
+    background-color: var(--cor-fundo-claro); 
+    text-align: center;
+}
+
+#estrutura h2 {
+    color: var(--verde-principal);
+    margin-bottom: 20px;
+}
+
+#estrutura p {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    font-size: 1.1em;
+}
+
+.ac-diferenciais {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.3em; 
+    font-style: italic;
+    border-left: 5px solid var(--verde-secundario); 
+    padding-left: 20px;
+    padding-right: 20px; 
+    color: black;
+}
+
+
+.equipe-destaque {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.equipe-destaque i {
+    font-size: 2.5em;
+    color: var(--verde-secundario);
+    margin-bottom: 15px;
+}
+
+.equipe-destaque h3 {
+    margin-top: 0;
+    color: var(--cor-texto-escuro);
+}
+
+
+footer {
+    background-color: var(--cor-fundo-escuro);
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #4CAF50 ;
+    text-decoration: none;
+    height: 30px;
+    width: 90px;
+    font-size: 20px;
+}
+footer i{
+    width: 90px;
+    font-size: 30px;
+    color: #38761d;
+}
+
+@media (max-width: 1080px) {
+
+    .header-content {
+        flex-direction: row;
+        gap: 1px;
+        display: flex;
+        justify-content: space-around;
+      
+    }
+    .logo-inst{
+        display: none;
+    }
+    nav {
+        order: 3; 
+        display: flex;
+        width: 80%;
+        height: 50px;
+        font-size: 9px;
+        
+    }
+    
+    nav a {
+        font-size: 13px;
+        border-radius: 80px;
+        color: #4CAF50;
+        background-color: white;
+    }
+
+    .btn-cta-header {
+        order: 2; 
+        font-size: 12px;
+        height: 30px;
+        width: 200px;
+        text-align: center ;
+        padding: 10px;
+        border-radius: 80px;
+        background-color: white;
+        color: #4CAF50;
+    }
+    
+    
+    #hero {
+        padding: 100px 0;
+    }
+    
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    
+    .beneficios-grid {
+        flex-direction: column;
+    }
+    
+    .equipe-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+    .beneficio-item {
+        margin-bottom: 20px;
+    }
+    
+}

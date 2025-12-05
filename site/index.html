@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota Verde Ofertas | Pé de Alface</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Meie+Script&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href=" " type="image/x-icon">
+    <link rel="shortcut icon" href="logocerta.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="logososoos.png" alt="Logo Pé de Alface" class="logo">
+        <h1> Rota Verde Ofertas</h1>
+        
+         <buttom>
+             <a href="official.html" class="btn-cta-main " >
+                 <i class="fa-solid fa-handshake"></i>   Acessar Site Official
+                </a>
+         </buttom>
+        
+    </header>
+
+    <div id="main-content">
+        <main>
+
+    
+    
+    <div id="opcoes-disponiveis">
+        </div>
+         <div class="search-box">
+        <input type="text" id="campo-busca" placeholder="O que você procura hoje? Ex: Alface, Tomate..." value="Alface">
+        <button onclick="simularBusca()">🔍 Buscar Ofertas</button>
+    </div>
+            <section id="ofertas-container">
+                <h2>Ofertas do Dia:</h2>
+                <p class="placeholder">Busque um produto (ex: Alface) para ver as opções logísticas e de preço!</p>
+            </section>
+
+            <div id="carrinho">
+                <h3>🛒 Seu Carrinho (B2C/B2B)</h3>
+                <ul id="lista-carrinho">
+                    </ul>
+                <p>Total: <span id="total-carrinho">R$ 0,00</span></p>
+                <button id="btn-finalizar" onclick="finalizarPedido()"> Finalizar Pedido e Rastrear Rota  <i class="fa-solid fa-coins"></i></button>
+            </div>
+           
+        </main>
+    </div>
+    
+
+    <div id="rastreamento-overlay" class="hidden">
+        <div class="rastreamento-card">
+            <h2>✅ Pedido Confirmado!</h2>
+            <h3 style="color: #38761d;">🚛 Rastreando Rota Verde (Rota 3)</h3>
+            <hr>
+            <p>Seu pedido está sendo preparado para a entrega mais eficiente da Pé de Alface (Logística Otimizada).</p>
+            
+            <div class="info-rastreio">
+                <p><strong>Status Atual:</strong> Em Separação no Centro de Distribuição.</p>
+                <p><strong>Motorista:</strong> Joana S.</p>
+                <p><strong>Próxima Atualização:</strong> Seu pedido entra na rota às 14:00h.</p>
+            </div>
+
+            <div class="previsao-final">
+                <p><strong>Previsão de Entrega:</strong> <span style="font-size: 1.2em; color: #cc0000;">15:30h - 16:00h</span></p>
+                <p style="font-size: 0.9em;">(Seu pedido é a 4ª de 7 paradas na rota otimizada)</p>
+            </div>
+            
+            <button onclick="reiniciarCompra()">Voltar e Fazer Novo Pedido</button>
+        </div>
+    </div>
+    <footer>
+    <div class="centro">
+
+        <div class="logofooter"><img src="logocerta.png" ></div>
+
+        
+    <div class="marcafooter">
+        <strong>
+                <p>&copy; 2025 Pé de Alface Distribuidora. Qualidade e Logística.</p>
+        </strong>
+    </div>
+    <div class="infofooter"> 
+        <p>
+            Compare múltiplas ofertas de hortifrúti e escolha o melhor preço e prazo de entrega para você.
+         </p>
+        </div>
+</div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
